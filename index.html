@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<title>文件下载</title>
+<style>
+button{margin:8px;padding:10px 20px;cursor:pointer;}
+</style>
+</head>
+<body>
+
+<div>
+    <button onclick="dl('新指导0.434.part01.rar')">下载 part01</button>
+    <button onclick="dl('新指导0.434.part02.rar')">下载 part02</button>
+    <button onclick="dl('新指导0.434.part03.rar')">下载 part03</button>
+    <button onclick="dl('新指导0.434.part04.rar')">下载 part04</button>
+    <button onclick="dl('新指导0.434.part05.rar')">下载 part05</button>
+    <button onclick="dl('新指导0.434.part06.rar')">下载 part06</button>
+</div>
+
+<script>
+function dl(name){
+    let a = document.createElement('a');
+    a.href = name;
+    a.download = name;
+    a.click();
+}
+</script>
+
+</body>
+</html>
